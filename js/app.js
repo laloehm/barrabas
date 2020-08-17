@@ -17,10 +17,20 @@ $(window).scroll(function () {
             'border-bottom': '1px solid #0049ff',
             'background': '#fff'
         });
+        $('.navbar').css({
+            'width': '100%',
+            'background': '#fff'
+        });
+
+
     } else {
         $('.navbar-brand img').attr('src', 'images/Logo.png');
         $('.collapse').css({
             'border-bottom': '1px solid #fff',
+            'background': 'transparent'
+        });
+        $('.navbar').css({
+            'width': '75%',
             'background': 'transparent'
         });
     }
