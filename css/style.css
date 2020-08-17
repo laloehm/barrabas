@@ -192,6 +192,28 @@ h2.title {
     margin-left: 55px;
 }
 
+.tarjetas img,
+.rrss img,
+.pagina img,
+.branding img {
+    width: 75px;
+}
+
+.tarjetas .etiqueta {
+    width: 140px;
+    display: block;
+    margin: 0 10px;
+}
+
+.tarjetas .col-md-3,
+.rrss .col-md-3,
+.pagina .col-md-3,
+.branding .col-md-3 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
 /* Contacto */
 .globo {
     display: flex;
