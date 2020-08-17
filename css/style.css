@@ -1,0 +1,316 @@
+@font-face {
+    font-family: "Klavika";
+    src: url(../fonts/klavika.otf);
+}
+
+@font-face {
+    font-family: "Klavika-Bold";
+    src: url(../fonts/klavika-bold.otf);
+}
+
+@font-face {
+    font-family: "Klavika-light";
+    src: url(../fonts/klavika-light.otf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Klavika', serif;
+}
+
+.row {
+    margin: 0;
+}
+
+p {
+    color: #0049ff;
+    font-size: 22px;
+}
+
+h2.title {
+    font-size: 44px;
+    font-family: 'Klavika-Bold', serif;
+    letter-spacing: 3px;
+}
+
+/* Header */
+
+.navbar {
+    width: 75%;
+}
+
+.navbar-brand img {
+    width: 90px;
+}
+
+.nav-link {
+    color: #00164c !important;
+    font-family: 'Klavika-Bold', serif;
+}
+
+.collapse {
+    border-bottom: 1px solid #fff;
+}
+
+/* Home */
+.home {
+    background: #0049ff;
+    height: 100vh;
+}
+
+.home h1 {
+    color: white;
+    background: #00164c;
+    padding: 1rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 3.2rem;
+    font-family: 'Klavika-Bold';
+}
+
+.home h2 {
+    font-size: 5rem;
+    font-family: 'Klavika-Bold';
+    letter-spacing: 4px;
+    padding: 1rem;
+}
+
+.home .izq,
+.home .der {
+    position: absolute;
+    bottom: 0;
+}
+
+.home .izq {
+    left: 0;
+}
+
+.home .der {
+    right: 0;
+}
+
+/* Nosotros */
+.nosotros {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nosotros img.izq,
+.nosotros img.der {
+    position: absolute;
+    top: 0;
+}
+
+.nosotros img.izq {
+    left: 0;
+}
+
+.nosotros img.der {
+    right: 0;
+}
+
+/* Servicios */
+.servicios .container:nth-of-type(1) {
+    position: relative;
+    padding: 0 40px;
+}
+
+.servicios .container span {
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: #d9e4ff;
+}
+
+.servicios .container h2 {
+    position: absolute;
+    top: 0;
+    padding: 0 10px;
+}
+
+.servicios h3 {
+    margin-bottom: 0;
+    font-family: 'Klavika-Bold', serif;
+    color: #0049ff;
+}
+
+.tarjetas .header,
+.rrss .header,
+.pagina .header,
+.branding .header {
+    display: flex;
+    align-items: center;
+}
+
+.tarjetas .header span,
+.rrss .header span,
+.pagina .header span,
+.branding .header span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.servicios .tarjetas p:nth-of-type(2) {
+    color: #84a7fc;
+    font-family: 'Klavika-light';
+}
+
+.tarjetas .header span {
+    background: #b2c8ff;
+}
+
+.rrss .header span {
+    background: #6692ff;
+}
+
+.pagina .header span {
+    background: #d9e4ff;
+}
+
+.branding .header span {
+    background: #b2c8ff;
+}
+
+.tarjetas p,
+.rrss p,
+.pagina p,
+.branding p {
+    margin-left: 55px;
+}
+
+/* Contacto */
+.globo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.globo .caption {
+    position: absolute;
+}
+
+.globo h5 {
+    font-family: 'Klavika-Bold', serif;
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+}
+
+.globo p {
+    color: #fff;
+    font-family: 'klavika-light', serif;
+}
+
+.globo a {
+    color: #00164c;
+    font-family: 'Klavika-Bold', serif;
+}
+
+.form input,
+.form textarea {
+    border: 2px solid #0049ff;
+    border-radius: 20px;
+    color: #00164c !important;
+}
+
+.form-control {
+    height: calc(2em + .9rem + 3px);
+}
+
+footer {
+    background: #00164c;
+    position: relative;
+    height: 164px;
+}
+
+footer img {
+    position: absolute;
+    bottom: 0;
+}
+
+footer img.izq {
+    left: 0;
+}
+
+footer img.der {
+    right: 0;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+
+/* Responsive */
+@media(max-width:767px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar-brand img {
+        width: 70px;
+    }
+
+    .home {
+        height: auto;
+        padding: 4rem 0;
+    }
+
+    .home h2 {
+        font-size: 3rem;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+    }
+
+    .home .principal {
+        width: 250px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .tarjetas p,
+    .rrss p,
+    .pagina p,
+    .branding p {
+        margin: 0;
+    }
+
+    .tarjetas img,
+    .rrss img,
+    .pagina img,
+    .branding img {
+        display: block;
+        margin: 16px auto;
+    }
+
+    .globo .caption {
+        position: relative;
+        background: #0049ff;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        padding: 15px;
+    }
+
+    .globo .caption p {
+        margin-bottom: 10px !important;
+    }
+
+    .form button {
+        position: relative;
+        z-index: 1;
+    }
+
+}
